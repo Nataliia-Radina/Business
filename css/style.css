@@ -1,18 +1,36 @@
+/* general styles */
 body,
 html {
 	width: 100%;
 	height: 100%;
 	margin: 0;
 	padding: 0;
+	min-height: 400px;
+	color: #5E5E5E;
+	font-family: "Open Sans", sans-serif;
+	font-size: 18px;
 }
 
 .container {
 	width: 100%;
-	height: 100%;
+	min-height: 100%;
 	margin: 0;
 	padding: 0;
 	position: relative;
+	padding-bottom: 200px;
 }
+
+.main-content {
+	margin: 20px 5% 60px 5%;
+}
+
+/* links color*/
+
+a {
+	color: #11a2ab;
+}
+
+/*header styles*/
 
 .header {
 	width: 100%;
@@ -23,17 +41,22 @@ html {
 
 .logo {
 	margin: 0;
-	padding: 20px 0 0 40px;
+	padding: 20px 0 0 80px;
 	font-size: 40px;
-	color: #fff;
 	float: left;
+}
+
+.logo a{
+	text-decoration: none;
+	color: #fff;
+	font-weight: bold;
 }
 
 .nav {
 	list-style-type: none;
 	float: right;
 	margin-right: 80px;
-	margin-top: 20px;
+	margin-top: 30px;
 }
 
 .menu-item {
@@ -86,9 +109,14 @@ html {
 }
 
 .menu-active {
-	color: #78B4AC;
 	background-color: #000;
 }
+
+.active-link {
+	color: #11a2ab !important;
+}
+
+/* footer and navigation menu styles*/
 
 .footer {
 	width: 100%;
@@ -115,6 +143,71 @@ html {
 }
 
 
-a {
-	color: #11a2ab;
+/* contact page*/
+.contact h1 {
+	font-weight: normal;
+}
+
+.orange {
+	color: #F6A327;
+}
+
+.contact {
+	width: 60%;
+	display: inline-block;
+}
+
+.contact-form input {
+	width: 70%;
+	height: 30px;
+	background-color: #f2f2f2;
+	border-radius: 25px;
+	border: 1px solid #e3e3e3;
+}
+
+.contact-form textarea {
+	width: 100%;
+	height: 250px;
+	background-color: #f2f2f2;
+	border-radius: 25px;
+	border: 1px solid #e3e3e3;
+}
+
+.contact-form label {
+	margin: 10px 0;
+	display: block;
+	text-transform: uppercase;
+	font-size: 14px;
+}
+
+.send-btn {
+	background-color: #EF8F00;
+	border: none;
+	padding: 10px 30px;
+	border-radius: 20px;
+	font-size: 14px;
+	color: #fff;
+	text-transform: uppercase;
+	cursor: pointer;
+	margin-top: 25px;
+}
+
+.send-btn:hover {
+	background-color: #FFB13D;
+}
+
+.contact-info {
+	width: 30%;
+	vertical-align: top;
+	display: inline-block;
+	margin: 60px 0 0 9%;
+}
+
+.contact-info h2 {
+	text-transform: uppercase;
+	font-weight: normal;
+}
+
+.contact-info span {
+	font-weight: bold;
 }
