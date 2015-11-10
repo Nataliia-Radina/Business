@@ -85,7 +85,7 @@ a:hover {
 }
 
 .menu-item:last-child {
-	margin-left: 5.5%;
+	margin-right: 5.5%;
 }
 
 .dropdown {
@@ -255,6 +255,56 @@ a:hover {
 	font-weight: bold;
 }
 
+/* our work page styles */
+
+.project-preview {
+	width: 32%;
+	margin-right: 2%;
+	margin-bottom: 2%;
+	float: left;
+	background-color: #BFBFBF;
+	-webkit-transition: background-color 0.7s ease;
+	transition: background-color 0.7s ease;
+}
+
+.project-preview p {
+	margin-left: 5%;
+	font-size: 20px;
+}
+
+.last-item {
+	margin-right: 0;
+}
+
+.preview-img {
+	width: 90%;
+	margin: 5% auto;
+	overflow:hidden;
+}
+
+.project-preview img {
+	max-width: 100%;
+	-webkit-transition: transform 0.7s ease;
+	transition: transform 0.7s ease;
+}
+
+.project-preview:hover {
+	background-color: #2B2E3A;
+}
+
+.project-preview:hover img {
+	-webkit-transform: scale(1.3);
+	transform: scale(1.3);
+}
+
+.clearfix:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
 /* media-querries */
 
 @media screen and (max-width: 840px) {
@@ -276,9 +326,6 @@ a:hover {
 		width: 100%;
 	}
 
-	li.menu-item:first-child {
-		margin-left: 5.5%;
-	}
 }
 
 @media screen and (max-width: 700px) {
@@ -289,5 +336,19 @@ a:hover {
 
 	.contact-info {
 		margin-left: 0;
+	}
+
+	.project-preview {
+		width: 48%;
+	}
+
+	.last-item {
+		margin-right: 2%;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.project-preview {
+		width: 100%;
 	}
 }
