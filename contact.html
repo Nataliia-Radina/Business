@@ -14,7 +14,7 @@
 		<p class='logo'><a href='index.html'>Digital Age</p>
 		<ul class='nav'>
 		<li class='menu-item'><a href='#'>About</a></li>
-		<li class='menu-item'><a href='#'>Our Work</a>
+		<li class='menu-item'><a href='work.html'>Our Work</a>
 			<ul class='dropdown'>
       		<li><a href='#'>Web Design</a></li>
       		<li><a href='#'>Web Development</a></li>
@@ -27,14 +27,21 @@
 		<div class='contact'>
 			<h1>Contact</h1>
 			<p>If you want to start start your project with us or have any questions, please, do not hesitate to contact us</p>
-				<form class='contact-form'>
-					<label for='name'>Name <span class='orange'>*</span></label>
-					<input type='text' name='nm' id='name'><br><br>
-					<label for='em'>Email <span class='orange'>*</span></label>
-					<input type='text' name='em' id='email'><br><br>
-					<label>Your message <span class='orange'>*</span></label>
-					<textarea></textarea><br>
-					<button class='send-btn'>Send Message</button>
+				<form id='contact-form' name='contactForm' action='' method='post'>
+					<div>
+						<label for='name'>Name <span class='orange'>*</span></label>
+						<input type='text' name='nm' id='name'>
+					</div>
+					<div><br>
+						<label for='em'>Email <span class='orange'>*</span></label>
+						<input type='text' name='em' id='email'>
+					</div><br>
+					<div>
+						<label>Your message <span class='orange'>*</span></label>
+						<textarea name='mes'></textarea>
+						<p id='error'>* Please, fill in all fields</p>
+					</div>
+					<input type='submit' id='send-btn' value='Send Message'>
 				</form>
 			</div>
 			<div class='contact-info'>
