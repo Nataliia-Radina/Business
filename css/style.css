@@ -22,7 +22,21 @@ html {
 }
 
 .main-content {
-	margin: 20px 5% 60px 5%;
+	margin: 50px 10% 75px 10%;
+	text-align: center;
+}
+
+.column-content_one {
+	margin: 50px 10% 75px 10%;
+	text-align: center;
+
+}
+
+img {    
+    padding: 10px 0;
+    max-width: 100%;
+    float: center;
+    height: auto;
 }
 
 /* links color*/
