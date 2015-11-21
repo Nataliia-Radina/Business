@@ -78,7 +78,7 @@ a:hover {
 	text-shadow: 0px 0 15px #0AEEFF;
 }
 
-.nav {
+.nav-desktop {
 	width: 70%;
 	list-style-type: none;
 	float: right;
@@ -362,7 +362,22 @@ a:hover {
 }
 
 @media screen and (max-width: 500px) {
+
+	.header {
+		height: 100px;
+	}
+
 	.project-preview {
 		width: 100%;
 	}
+
+	.nav-desktop {
+		display: none;
+	}
+
+	.logo {
+		float: left;
+		padding-left: 5%;
+	}
+
 }
